@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Moonlens/VideoController.swift"
+            timestampString = "509212256.250831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "VideoController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Moonlens.VideoController.player.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVPlayer&gt;"
+                  moduleName = "Moonlens"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jr/Documents/XCode/Moonlens/Moonlens/VideoController.swift"
+                  timestampString = "509329719.765509"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Moonlens.VideoController.player.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.AVPlayer&gt;"
+                  moduleName = "Moonlens"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jr/Documents/XCode/Moonlens/Moonlens/VideoController.swift"
+                  timestampString = "509329719.769082"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Moonlens.VideoController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Moonlens.VideoController"
+                  moduleName = "Moonlens"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jr/Documents/XCode/Moonlens/Moonlens/VideoController.swift"
+                  timestampString = "509329719.771948"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Moonlens.VideoController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Moonlens.VideoController&gt;"
+                  moduleName = "Moonlens"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jr/Documents/XCode/Moonlens/Moonlens/VideoController.swift"
+                  timestampString = "509329719.7737"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

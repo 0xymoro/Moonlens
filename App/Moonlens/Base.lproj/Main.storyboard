@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O7p-qg-XX2">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--videoController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VideoController" title="videoController" id="BYZ-38-t0r" customClass="VideoController" customModule="Moonlens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIo-yx-aKD" userLabel="lView">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGz-1z-fyy" userLabel="rView">
+                                <rect key="frame" x="334" y="0.0" width="335" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view clearsContextBeforeDrawing="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ca8-h2-4mU" userLabel="menuView">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1P-HH-DeN" userLabel="lMenuView">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="375"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Black" translatesAutoresizingMaskIntoConstraints="NO" id="yeK-FH-ucG">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="375"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="pauseL" image="PauseButton" translatesAutoresizingMaskIntoConstraints="NO" id="69q-QQ-3Ps">
+                                                <rect key="frame" x="139" y="160" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="recenterL" image="RecenterButton" translatesAutoresizingMaskIntoConstraints="NO" id="uh5-2D-7bW">
+                                                <rect key="frame" x="202" y="160" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cursor" translatesAutoresizingMaskIntoConstraints="NO" id="DH5-r1-cm5">
+                                                <rect key="frame" x="150" y="171" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ReplayButtonWhite" translatesAutoresizingMaskIntoConstraints="NO" id="b7E-e5-hKR">
+                                                <rect key="frame" x="76" y="160" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="backL" image="BackButton" translatesAutoresizingMaskIntoConstraints="NO" id="pin-zu-GkN">
+                                                <rect key="frame" x="148" y="223" width="38" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q7I-6F-zn0" userLabel="rMenuView">
+                                        <rect key="frame" x="334" y="0.0" width="335" height="375"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Black" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-QP-juf">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="375"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="pauseR" image="PauseButton" translatesAutoresizingMaskIntoConstraints="NO" id="s9H-QE-euf">
+                                                <rect key="frame" x="139" y="160" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="recenterR" image="RecenterButton" translatesAutoresizingMaskIntoConstraints="NO" id="hrA-4C-Xjy">
+                                                <rect key="frame" x="202" y="160" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="lCursor" image="Cursor" translatesAutoresizingMaskIntoConstraints="NO" id="JZl-cR-OOc">
+                                                <rect key="frame" x="150" y="171" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ReplayButtonWhite" translatesAutoresizingMaskIntoConstraints="NO" id="0jj-sP-BM5">
+                                                <rect key="frame" x="76" y="160" width="55" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="backR" image="BackButton" translatesAutoresizingMaskIntoConstraints="NO" id="Pud-pf-Wby">
+                                                <rect key="frame" x="148" y="223" width="38" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fe1-Ec-hMC" userLabel="tapView">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UUX-h6-Ppq" appends="YES" id="i3a-4S-leC"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="lBack" destination="pin-zu-GkN" id="09E-zj-aSt"/>
+                        <outlet property="lCursor" destination="DH5-r1-cm5" id="TXH-4C-BWn"/>
+                        <outlet property="lMenuView" destination="z1P-HH-DeN" id="cmX-On-YA9"/>
+                        <outlet property="lPause" destination="69q-QQ-3Ps" id="NKN-3x-nm2"/>
+                        <outlet property="lRecenter" destination="uh5-2D-7bW" id="Kck-H9-dmc"/>
+                        <outlet property="lReplay" destination="b7E-e5-hKR" id="C65-k8-YLw"/>
+                        <outlet property="lView" destination="EIo-yx-aKD" id="bLP-wg-vAr"/>
+                        <outlet property="menuTap" destination="UUX-h6-Ppq" id="Ys8-Rt-GSg"/>
+                        <outlet property="menuView" destination="Ca8-h2-4mU" id="tQo-6N-4s0"/>
+                        <outlet property="rBack" destination="Pud-pf-Wby" id="LOA-tN-kMZ"/>
+                        <outlet property="rCursor" destination="JZl-cR-OOc" id="3jK-lr-h61"/>
+                        <outlet property="rMenuView" destination="q7I-6F-zn0" id="Ieg-YP-q2a"/>
+                        <outlet property="rPause" destination="s9H-QE-euf" id="axT-KY-eRy"/>
+                        <outlet property="rRecenter" destination="hrA-4C-Xjy" id="zND-Qa-Eeh"/>
+                        <outlet property="rReplay" destination="0jj-sP-BM5" id="ne1-VA-Xxg"/>
+                        <outlet property="rView" destination="FGz-1z-fyy" id="4Pu-qW-7zK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UUX-h6-Ppq">
+                    <connections>
+                        <action selector="menuTapped:" destination="BYZ-38-t0r" id="RSq-0T-035"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.28185907046478" y="-570.39999999999998"/>
+        </scene>
+        <!--MainMenuController-->
+        <scene sceneID="IvF-pJ-4Rt">
+            <objects>
+                <viewController storyboardIdentifier="MainMenuController" id="O7p-qg-XX2" userLabel="MainMenuController" customClass="MainMenuController" customModule="Moonlens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tdt-V5-mIW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fr9-RK-OgT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U7h-ZS-pvC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lk4-yY-H8d" userLabel="LView">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vR6-6X-3cd">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="375"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkQ-ip-x64">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="1189"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MoonLensApp" translatesAutoresizingMaskIntoConstraints="NO" id="q1H-dz-uTR">
+                                                <rect key="frame" x="-1" y="0.0" width="336" height="334"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNv-DO-DTr">
+                                                <rect key="frame" x="0.0" y="302" width="335" height="94"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Touring Paris" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6Z-3w-JRs">
+                                                        <rect key="frame" x="124" y="17" width="193" height="28"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Title"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.22472069300518138" green="0.22472069300518138" blue="0.22472069300518138" alpha="0.65333406690140849" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3:30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihK-4k-t0q">
+                                                        <rect key="frame" x="124" y="41" width="128" height="28"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="Duration"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" red="0.224720693" green="0.224720693" blue="0.224720693" alpha="0.65333406689999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <size key="shadowOffset" width="2" height="2"/>
+                                                    </label>
+                                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Black" translatesAutoresizingMaskIntoConstraints="NO" id="4Dk-ak-81O">
+                                                        <rect key="frame" x="29" y="5" width="83" height="83"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cursor" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-e7-5Pc">
+                                        <rect key="frame" x="151" y="199" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4p-n8-O6p" userLabel="RView">
+                                <rect key="frame" x="334" y="0.0" width="337" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8pT-kA-MC9">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="375"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izf-pO-9ai">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="1189"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MoonLensApp" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-oC-vJH">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="334"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cursor" translatesAutoresizingMaskIntoConstraints="NO" id="JED-gc-1wv">
+                                        <rect key="frame" x="151" y="199" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rJs-Rq-f4G">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VVl-6U-Dwu" appends="YES" id="Yje-9U-Fu8"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="lCursor" destination="LbB-e7-5Pc" id="DBL-kI-GK1"/>
+                        <outlet property="leftScreen" destination="zkQ-ip-x64" id="ofC-aE-lSy"/>
+                        <outlet property="rCursor" destination="JED-gc-1wv" id="7zN-WX-nh9"/>
+                        <outlet property="rightScreen" destination="izf-pO-9ai" id="gkY-pl-XZE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sn3-Qh-22y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VVl-6U-Dwu">
+                    <connections>
+                        <action selector="screenTapped:" destination="O7p-qg-XX2" id="Psp-BU-w3R"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="230" y="297"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppBackground" width="668" height="750"/>
+        <image name="BackButton" width="138" height="138"/>
+        <image name="Black" width="667" height="375"/>
+        <image name="Cursor" width="64" height="64"/>
+        <image name="MoonLensApp" width="668" height="664"/>
+        <image name="PauseButton" width="138" height="138"/>
+        <image name="RecenterButton" width="138" height="138"/>
+        <image name="ReplayButtonWhite" width="138" height="138"/>
+    </resources>
+</document>
