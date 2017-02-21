@@ -49,6 +49,7 @@ class VideoController: UIViewController {
     var gyroY = CGFloat(0)
     var mainMenuController: MainMenuController!
     var isGyro = false;
+    var switched = false;
     override func viewDidLoad() {
         super.viewDidLoad()
         mainMenuController = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(withIdentifier: "MainMenuController") as! MainMenuController
@@ -83,7 +84,6 @@ class VideoController: UIViewController {
             leftVideoLayer.frame = CGRect(x: xVal-self.view.bounds.width/4*CGFloat(videoScale)-gyroX, y: -(videoHeight-self.view.bounds.height)/2+yVal-gyroY, width: self.view.bounds.width*CGFloat(videoScale), height: self.view.bounds.height*CGFloat(videoScale))
         }
         if(rightVideoLayer != nil && !menuOn){
-            //rightVideoLayer.frame = CGRect(x: xVal-self.view.bounds.width/4*CGFloat(videoScale), y: -(videoHeight-self.view.bounds.height)/2+yVal, width: self.view.bounds.width*CGFloat(videoScale), height: self.view.bounds.height*CGFloat(videoScale))
             rightVideoLayer.frame = leftVideoLayer.frame
         }
         if(motionManager.accelerometerData != nil){
@@ -203,10 +203,6 @@ class VideoController: UIViewController {
             parseCount+=1
             gyroX = CGFloat(-7000-x!)/CGFloat(2000)*30
             gyroY = CGFloat(y!)/CGFloat(4000)*50
-            //var x = Int(myStrings[parseCount])
-            //var y = Int(myStrings[parseCount][0..<3]);
-            //var x = Int(myStrings[parseCount].substring(to: index));
-            //print("Y: "+String(describing: y)+" X: "+String(describing: x))
             print("GY: "+String(describing: gyroY)+" GX: "+String(describing: gyroX))
         }
     }
@@ -239,9 +235,11 @@ class VideoController: UIViewController {
         rightVideoLayer.frame = CGRect(x: xVal, y: yVal, width: self.view.bounds.width*2, height: self.view.bounds.height*2)
         rView.layer.addSublayer(rightVideoLayer)
         NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil){_ in
-            let t1 = CMTimeMake(5, 100);
-            self.player.seek(to: t1)
-            self.player.play()
+            if(!self.switched){
+                let t1 = CMTimeMake(5, 100);
+                self.player.seek(to: t1)
+                self.player.play()
+            }
         }
         player.play()
     }
@@ -251,6 +249,7 @@ class VideoController: UIViewController {
             toggleMenu()
         }
         if(menuMode == 1){
+            switched = true
             player.pause()
             leftVideoLayer.removeFromSuperlayer()
             rightVideoLayer.removeFromSuperlayer()
